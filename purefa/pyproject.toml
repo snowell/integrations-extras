@@ -8,7 +8,7 @@ build-backend = "hatchling.build"
 name = "datadog-purefa"
 description = "The Pure Storage FlashArray check"
 readme = "README.md"
-license = "BSD-3-Clause"
+license = {text = "BSD-3-Clause"}
 keywords = [
     "datadog",
     "datadog agent",
@@ -23,6 +23,7 @@ classifiers = [
     "Intended Audience :: Developers",
     "Intended Audience :: System Administrators",
     "Topic :: System :: Monitoring",
+    "Private :: Do Not Upload",
     "License :: OSI Approved :: BSD License",
     "Programming Language :: Python :: 3.8",
 ]

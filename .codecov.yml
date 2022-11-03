@@ -39,10 +39,18 @@ coverage:
         target: 75
         flags:
         - filebeat
+      Fluent_Bit:
+        target: 75
+        flags:
+        - fluentbit
       Gatekeeper:
         target: 75
         flags:
         - gatekeeper
+      Gitea:
+        target: 75
+        flags:
+        - gitea
       Gnatsd:
         target: 75
         flags:
@@ -51,6 +59,10 @@ coverage:
         target: 75
         flags:
         - gnatsd_streaming
+      gRPC_Check:
+        target: 75
+        flags:
+        - grpc_check
       JFrog_Platform:
         target: 75
         flags:
@@ -75,6 +87,10 @@ coverage:
         target: 75
         flags:
         - neo4j
+      Netnology_SD-WAN:
+        target: 75
+        flags:
+        - nn_sdwan
       Neutrona:
         target: 60
         flags:
@@ -107,6 +123,14 @@ coverage:
         target: 75
         flags:
         - puma
+      PureFA:
+        target: 75
+        flags:
+        - purefa
+      PureFB:
+        target: 75
+        flags:
+        - purefb
       Reboot_Required:
         target: 75
         flags:
@@ -159,6 +183,10 @@ coverage:
         target: 75
         flags:
         - traefik
+      Trino:
+        target: 75
+        flags:
+        - trino
       UPSC:
         target: 75
         flags:
@@ -167,6 +195,10 @@ coverage:
         target: 75
         flags:
         - unbound
+      Unifi_Console:
+        target: 75
+        flags:
+        - unifi_console
       Vespa:
         target: 75
         flags:
@@ -175,10 +207,18 @@ coverage:
         target: 50
         flags:
         - zabbix
-      cert-manager:
+      fluxcd:
         target: 75
         flags:
-        - cert_manager
+        - fluxcd
+      exim:
+        target: 75
+        flags:
+        - exim
+      cfssl:
+        target: 75
+        flags:
+        - cfssl
       nvml:
         target: 75
         flags:
@@ -191,14 +231,14 @@ coverage:
         target: 75
         flags:
         - pihole
-      pulsar:
-        target: 75
-        flags:
-        - pulsar
-      purefa:
+      PureFA:
         target: 75
         flags:
         - purefa
+      PureFB:
+        target: 75
+        flags:
+        - purefb
       speedtest:
         target: 75
         flags:
@@ -219,11 +259,11 @@ flags:
     paths:
     - bind9/datadog_checks/bind9
     - bind9/tests
-  cert_manager:
+  cfssl:
     carryforward: true
     paths:
-    - cert_manager/datadog_checks/cert_manager
-    - cert_manager/tests
+    - cfssl/datadog_checks/cfssl
+    - cfssl/tests
   cloudsmith:
     carryforward: true
     paths:
@@ -239,16 +279,36 @@ flags:
     paths:
     - eventstore/datadog_checks/eventstore
     - eventstore/tests
+  exim:
+    carryforward: true
+    paths:
+    - exim/datadog_checks/exim
+    - exim/tests
   filebeat:
     carryforward: true
     paths:
     - filebeat/datadog_checks/filebeat
     - filebeat/tests
+  fluentbit:
+    carryforward: true
+    paths:
+    - fluentbit/datadog_checks/fluentbit
+    - fluentbit/tests
+  fluxcd:
+    carryforward: true
+    paths:
+    - fluxcd/datadog_checks/fluxcd
+    - fluxcd/tests
   gatekeeper:
     carryforward: true
     paths:
     - gatekeeper/datadog_checks/gatekeeper
     - gatekeeper/tests
+  gitea:
+    carryforward: true
+    paths:
+    - gitea/datadog_checks/gitea
+    - gitea/tests
   gnatsd:
     carryforward: true
     paths:
@@ -259,6 +319,11 @@ flags:
     paths:
     - gnatsd_streaming/datadog_checks/gnatsd_streaming
     - gnatsd_streaming/tests
+  grpc_check:
+    carryforward: true
+    paths:
+    - grpc_check/datadog_checks/grpc_check
+    - grpc_check/tests
   jfrog_platform:
     carryforward: true
     paths:
@@ -294,6 +359,11 @@ flags:
     paths:
     - nextcloud/datadog_checks/nextcloud
     - nextcloud/tests
+  nn_sdwan:
+    carryforward: true
+    paths:
+    - nn_sdwan/datadog_checks/nn_sdwan
+    - nn_sdwan/tests
   ns1:
     carryforward: true
     paths:
@@ -339,11 +409,6 @@ flags:
     paths:
     - portworx/datadog_checks/portworx
     - portworx/tests
-  pulsar:
-    carryforward: true
-    paths:
-    - pulsar/datadog_checks/pulsar
-    - pulsar/tests
   puma:
     carryforward: true
     paths:
@@ -354,6 +419,11 @@ flags:
     paths:
     - purefa/datadog_checks/purefa
     - purefa/tests
+  purefb:
+    carryforward: true
+    paths:
+    - purefb/datadog_checks/purefb
+    - purefb/tests
   reboot_required:
     carryforward: true
     paths:
@@ -424,11 +494,21 @@ flags:
     paths:
     - traefik/datadog_checks/traefik
     - traefik/tests
+  trino:
+    carryforward: true
+    paths:
+    - trino/datadog_checks/trino
+    - trino/tests
   unbound:
     carryforward: true
     paths:
     - unbound/datadog_checks/unbound
     - unbound/tests
+  unifi_console:
+    carryforward: true
+    paths:
+    - unifi_console/datadog_checks/unifi_console
+    - unifi_console/tests
   upsc:
     carryforward: true
     paths:

@@ -6,6 +6,8 @@
 /*/manifest.json                         @DataDog/documentation @DataDog/agent-integrations
 
 # Community partners
+/akamai_datastream_2/                    @DataDog/web-integrations
+/alertnow/                               @Uijong-Kim uijong.kim@bespinglobal.com
 /algorithmia/                            @koverholt support@algorithmia.io
 /altostra/                               @yevk @altostra/engineering
 /ambassador/                             @datawire hello@datawire.io
@@ -17,34 +19,44 @@
 /aqua/                                   @DataDog/container-integrations
 /auth0/                                  @DataDog/agent-integrations
 /aws_pricing/                            @tsein-bc tsein@brightcove.com
+/backstage/                              @RoadieHQ support@roadie.io
 /bind9/                                  @ashuvyas45 ashuvyas45@gmail.com
 /bluematador/                            support@bluematador.com
 /bonsai/                                 dev@onemorecloud.com
 /botprise/                               @codechefnisha-bp nisha.kumari@botprise.com
 /buddy/                                  support@buddy.works
 /cert_manager/                           @arapulido ara.pulido@datadoghq.com
+/cfssl/                                  @JeanFred
 /cloudsmith/                             @cloudsmith ccarey@cloudsmith.io
+/cockroachdb_dedicated/                  @DataDog/web-integrations
 /concourse_ci/                           @DataDog/agent-integrations
 /configcat/                              @configcat
 /contrastsecurity/                       @kristianamitchellcontrastsecurity kristiana.mitchell@contrastsecurity.com
 /convox/                                 @DataDog/agent-integrations
 /cortex/                                 @cortexapps/engineering support@getcortexapp.com
 /cyral/                                  @tyrannosaurus-becks product@cyral.com
-/data_runner/                            @DataDog/ui-apps
+/data_runner/                            @DataDog/apps-sdk
 /datazoom/                               @DataDog/web-integrations
+/docontrol/                              @lielran
 /embrace_mobile/                         @jpmunz @joage
 /eventstore/                             @Xorima
 /eversql/                                @tomershay team@eversql.com
+/exim/                                   @JeanFred
 /fairwinds_insights/                     @rbren insights@fairwinds.com
 /federatorai/                            @chenyingtz @yummydsky
 /filebeat/                               @wk8 jean@tripping.com
 /finout/                                 @roiravhon support@finout.io
+/firefly/                                @sefi-infralight contact@gofirefly.io
 /flagsmith/                              @benjarom3 support@flagsmith.com
+/fluentbit/                              @zhenyami
 /flume/                                  @KealanMaas
+/fluxcd/                                 @melchiormoulin melchior.moulin@gmail.com
 /gatekeeper/                             @arapulido ara.pulido@datadoghq.com
+/gitea/                                  @FlorentClarret
 /gnatsd/                                 @stephenprater @jaredhoyt dev@goldstar.com
 /gnatsd_streaming/                       @stephenprater @jaredhoyt dev@goldstar.com
 /gremlin/                                support@gremlin.com
+/grpc_check/                             @keisku
 /harness_cloud_cost_management/          @akashbdj support@harness.io
 /hasura_cloud/                           @ShraddhaAg @shahidhk support@hasura.io
 /hbase_master/                           @everpeace
@@ -53,22 +65,26 @@
 /jfrog_platform/                         @jfrog/partner-engineering
 /ilert/                                  @yacut support@ilert.com
 /insightfinder/                          @dearmore @erinlmcmahon support@insightfinder.com
+/rum_javascript/                         @DataDog/rum-app
 /k6/                                     @ppcano support@k6.io
 /kernelcare/                             @grubberr schvaliuk@cloudlinux.com
+/komodor/                                @komodorio/sales-engineers
 /launchdarkly/                           support@launchdarkly.com
 /lacework/                               @DataDog/agent-integrations
 /lambdatest/                             @prateeksainilambdatest
 /launchdarkly/                           support@launchdarkly.com
-/lighthouse/                             @ericmustin
+/lighthouse/                             @DataDog/agent-integrations
+/lightstep_incident_response/            @deepakarumugham deepak12f@gmail.com
 /logstash/                               @ervansetiawan ervansetiawan@gmail.com
 /logzio/                                 @DataDog/agent-integrations
 /n2ws/                                   @eliadeini eliad.eini@n2ws.com
 /neo4j/                                  @davidfauth help@neo4j.com
 /neutrona/                               @DavidFlamini david@neutrona.com
 /nextcloud/                              @eplanet
+/nn_sdwan/                               @nikhilguptanetnologyio @habibmadaninetnologyio
 /nobl9/                                  @ian-bartholomew support@nobl9.com
 /nomad/                                  @irabinovitch
-/ns1/                                    @dblagojevic-daitan dblagojevic@daitan.com
+/ns1/                                    @Zach-Johnson zjohnson@ns1.com
 /nvml/                                   @cep21
 /octoprint/                              @gwaldo gwaldo@gmail.com
 /open_policy_agent/                      @arapulido ara.pulido@datadoghq.com
@@ -86,25 +102,34 @@
 /pulumi/                                 @isaac-pulumi team@pulumi.com
 /puma/                                   @plasticine
 /purefa/                                 @chrroberts-pure pure-observability@purestorage.com
+/purefb/                                 @chrroberts-pure pure-observability@purestorage.com
 /rbltracker/                             @DataDog/container-integrations
 /reboot_required/                        @montdidier support@krugerheavyindustries.com
 /redisenterprise/                        @maguec christian@redislabs.com
-/redis_sentinel/                         @krasnoukhov
+/redis_sentinel/                         @DataDog/agent-integrations
 /redpanda/                               @rkruze roko@vectorized.io
 /resin/                                  @brentm5
 /retool/                                 @jamiecuffe
 /riak_repl/                              @abtreece
 /rigor/                                  support@rigor.com
 /rookout/                                support@rookout.com
+/rum_android/                            @DataDog/rum-app
+/rum_angular/                            @DataDog/rum-app
+/rum_cypress/                            @DataDog/rum-app
+/rum_flutter/                            @DataDog/rum-app
+/rum_ios/                                @DataDog/rum-app
+/rum_react/                              @DataDog/rum-app
+/rum_react_native/                       @DataDog/rum-app
 /rundeck/                                forrest@rundeck.com
-/sedai/                                  @pwujek
+/sedai/                                  @praveenprakash
 /sendmail/                               @dabcoder david.bouchare@datadoghq.com
 /signl4/                                 @rons4 ron@signl4.com
 /sigsci/                                 @signalsciences info@signalsciences.com
-/shoreline/                              @ytnytn1 support@shoreline.io
+/shoreline/                              @ivang-shoreline @ciprian-shoreline @alinshoreline @cioc-shoreline @cristi-shoreline support@shoreline.io
 /sleuth/                                 @mtbnut pleal@sleuth.io
 /snmpwalk/                               @DataDog/agent-integrations
 /sortdb/                                 @namrata4 namrata.deshpande4@gmail.com
+/speedscale/                             @kenahrens ken@speedscale.com
 /speedtest/                              @platinummonkey
 /split/                                  @jeremy-lq
 /sqreen/                                 @DataDog/agent-integrations
@@ -113,24 +138,36 @@
 /stardog/                                @snowell support@stardog.com
 /statsig/                                @marcos-statsig support@statsig.com
 /storm/                                  @platinummonkey
+/stormforge/                             @bradbeam @tperol support@stormforge.io
 /superwise/                              @oryan-omer support@superwise.ai
 /syncthing/                              @sashacmc
 /tidb/                                   @SabaPing xuyifan02@pingcap.com
 /tidb_cloud/                             @SabaPing xuyifan02@pingcap.com
 /torq/                                   @torqio/rnd support@torq.io
 /traefik/                                @renaudhager
-/twenty_forty_eight/                     @DataDog/ui-apps
+/trino/                                  @ndrluis
+/twenty_forty_eight/                     @DataDog/apps-sdk
 /tyk/                                    @letzya
 /unbound/                                @dbyron0 david.byron@avast.com
+/unifi_console/                          @abruneau
+/unitq/                                  @nik-unitq
 /upsc/                                   @platinummonkey
 /uptime/                                 @jeremy-lq
+/vantage/                                @brookemckim support@vantage.sh
 /vercel/                                 @Datadog/serverless
 /vespa/                                  @gjoranv dd@vespa.ai
 /vns3/                                   @DataDog/agent-integrations
 /zabbix/                                 @KosukeKamiya
+/zebrium/                                @rodbagg
+/zenduty/                                @zenbeam shubham@zenduty.com
 /zscaler/                                @BoyangHuang @DataDog/web-integrations
+/sosivio/                                @danarlowski info@sosiv.io
+/emnify/                                 @EMnify/development @EMnify/rademade
 
 # Community Partners + Documentation
+/alertnow/*metadata.csv                  @Uijong-Kim uijong.kim@bespinglobal.com @DataDog/documentation
+/alertnow/manifest.json                  @Uijong-Kim uijong.kim@bespinglobal.com @DataDog/documentation
+/alertnow/README.md                      @Uijong-Kim uijong.kim@bespinglobal.com @DataDog/documentation
 /algorithmia/*metadata.csv               @koverholt support@algorithmia.io @DataDog/documentation
 /algorithmia/manifest.json               @koverholt support@algorithmia.io @DataDog/documentation
 /algorithmia/README.md                   @koverholt support@algorithmia.io @DataDog/documentation
@@ -218,9 +255,15 @@
 /flume/*metadata.csv                     @KealanMaas @DataDog/documentation
 /flume/manifest.json                     @KealanMaas @DataDog/documentation
 /flume/README.md                         @KealanMaas @DataDog/documentation
+/fluxcd/*metadata.csv                    @melchiormoulin @DataDog/documentation
+/fluxcd/manifest.json                    @melchiormoulin @DataDog/documentation
+/fluxcd/README.md                        @melchiormoulin @DataDog/documentation
 /gatekeeper/*metadata.csv                @arapulido ara.pulido@datadoghq.com @DataDog/documentation
 /gatekeeper/manifest.json                @arapulido ara.pulido@datadoghq.com @DataDog/documentation
 /gatekeeper/README.md                    @arapulido ara.pulido@datadoghq.com @DataDog/documentation
+/gitea/*metadata.csv                     @FlorentClarret @DataDog/documentation
+/gitea/manifest.json                     @FlorentClarret @DataDog/documentation
+/gitea/README.md                         @FlorentClarret @DataDog/documentation
 /gnatsd_streaming/*metadata.csv          @stephenprater @jaredhoyt dev@goldstar.com @DataDog/documentation
 /gnatsd_streaming/manifest.json          @stephenprater @jaredhoyt dev@goldstar.com @DataDog/documentation
 /gnatsd_streaming/README.md              @stephenprater @jaredhoyt dev@goldstar.com @DataDog/documentation
@@ -230,6 +273,9 @@
 /gremlin/*metadata.csv                   support@gremlin.com @DataDog/documentation
 /gremlin/manifest.json                   support@gremlin.com @DataDog/documentation
 /gremlin/README.md                       support@gremlin.com @DataDog/documentation
+/grpc_check/*metadata.csv                @keisku @DataDog/documentation
+/grpc_check/manifest.json                @keisku @DataDog/documentation
+/grpc_check/README.md                    @keisku @DataDog/documentation
 /hasura_cloud/*metadata.csv              @ShraddhaAg @shahidhk support@hasura.io @DataDog/documentation
 /hasura_cloud/manifest.json              @ShraddhaAg @shahidhk support@hasura.io @DataDog/documentation
 /hasura_cloud/README.md                  @ShraddhaAg @shahidhk support@hasura.io @DataDog/documentation
@@ -263,9 +309,9 @@
 /launchdarkly/manifest.json              support@launchdarkly.com @DataDog/documentation
 /launchdarkly/README.md                  support@launchdarkly.com @DataDog/documentation
 /launchdarkly/README.md                  support@launchdarkly.com @DataDog/documentation
-/lighthouse/*metadata.csv                @ericmustin @DataDog/documentation
-/lighthouse/manifest.json                @ericmustin @DataDog/documentation
-/lighthouse/README.md                    @ericmustin @DataDog/documentation
+/lighthouse/*metadata.csv                @DataDog/agent-integrations @DataDog/documentation
+/lighthouse/manifest.json                @DataDog/agent-integrations @DataDog/documentation
+/lighthouse/README.md                    @DataDog/agent-integrations @DataDog/documentation
 /logstash/*metadata.csv                  @ervansetiawan ervansetiawan@gmail.com @DataDog/documentation
 /logstash/manifest.json                  @ervansetiawan ervansetiawan@gmail.com @DataDog/documentation
 /logstash/README.md                      @ervansetiawan ervansetiawan@gmail.com @DataDog/documentation
@@ -338,9 +384,9 @@
 /reboot_required/*metadata.csv           @montdidier support@krugerheavyindustries.com @DataDog/documentation
 /reboot_required/manifest.json           @montdidier support@krugerheavyindustries.com @DataDog/documentation
 /reboot_required/README.md               @montdidier support@krugerheavyindustries.com @DataDog/documentation
-/redis_sentinel/*metadata.csv            @krasnoukhov @DataDog/documentation
-/redis_sentinel/manifest.json            @krasnoukhov @DataDog/documentation
-/redis_sentinel/README.md                @krasnoukhov @DataDog/documentation
+/redis_sentinel/*metadata.csv            @DataDog/agent-integrations @DataDog/documentation
+/redis_sentinel/manifest.json            @DataDog/agent-integrations @DataDog/documentation
+/redis_sentinel/README.md                @DataDog/agent-integrations @DataDog/documentation
 /redisenterprise/manifest.json           @maguec christian@redislabs.com @DataDog/documentation
 /redisenterprise/README.md               @maguec christian@redislabs.com @DataDog/documentation
 /resin/*metadata.csv                     @brentm5 @DataDog/documentation
@@ -405,6 +451,9 @@
 /storm/*metadata.csv                     @platinummonkey @DataDog/documentation
 /storm/manifest.json                     @platinummonkey @DataDog/documentation
 /storm/README.md                         @platinummonkey @DataDog/documentation
+/stormforge/*metadata.csv                @bradbeam @tperol support@stormforge.io @DataDog/documentation
+/stormforge/manifest.json                @bradbeam @tperol support@stormforge.io @DataDog/documentation
+/stormforge/README.md                    @bradbeam @tperol support@stormforge.io @DataDog/documentation
 /syncthing/*metadata.csv                 @sashacmc @DataDog/documentation
 /syncthing/manifest.json                 @sashacmc @DataDog/documentation
 /syncthing/README.md                     @sashacmc @DataDog/documentation
@@ -420,6 +469,9 @@
 /unbound/*metadata.csv                   @dbyron0 david.byron@avast.com @DataDog/documentation
 /unbound/manifest.json                   @dbyron0 david.byron@avast.com @DataDog/documentation
 /unbound/README.md                       @dbyron0 david.byron@avast.com @DataDog/documentation
+/unifi_console/*metadata.csv             @abruneau @DataDog/documentation
+/unifi_console/manifest.json             @abruneau @DataDog/documentation
+/unifi_console/README.md                 @abruneau @DataDog/documentation
 /upsc/*metadata.csv                      @platinummonkey @DataDog/documentation
 /upsc/manifest.json                      @platinummonkey @DataDog/documentation
 /upsc/README.md                          @platinummonkey @DataDog/documentation
@@ -435,9 +487,18 @@
 /zabbix/*metadata.csv                    @KosukeKamiya @DataDog/documentation
 /zabbix/manifest.json                    @KosukeKamiya @DataDog/documentation
 /zabbix/README.md                        @KosukeKamiya @DataDog/documentation
+/zenduty/*metadata.csv                   @zenbeam shubham@zenduty.com @DataDog/documentation
+/zenduty/manifest.json                   @zenbeam shubham@zenduty.com @DataDog/documentation
+/zenduty/README.md                       @zenbeam shubham@zenduty.com @DataDog/documentation
 /rookout/*metadata.csv                    @rookout/product @DataDog/documentation
 /rookout/manifest.json                    @rookout/product @DataDog/documentation
 /rookout/README.md                        @rookout/product @DataDog/documentation
 /lambdatest/*metadata.csv                 @prateeksainilambdatest @DataDog/documentation
 /lambdatest/manifest.json                 @prateeksainilambdatest @DataDog/documentation
 /lambdatest/README.md                     @prateeksainilambdatest @DataDog/documentation
+/sosivio/*metadata.csv                 @danarlowski @DataDog/documentation
+/sosivio/manifest.json                 @danarlowski @DataDog/documentation
+/sosivio/README.md                     @danarlowski @DataDog/documentation
+/emnify/*metadata.csv                  @DataDog/documentation @EMnify/development @EMnify/rademade  
+/emnify/manifest.json                  @DataDog/documentation @EMnify/development @EMnify/rademade
+/emnify/README.md                      @DataDog/documentation @EMnify/development @EMnify/rademade

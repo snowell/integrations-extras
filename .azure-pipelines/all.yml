@@ -21,18 +21,21 @@ resources:
   - container: dd_agent
     image: gcr.io/datadoghq/agent:latest
     ports:
-      - 8127:8126
+    - 8127:8126
     env:
       DD_API_KEY: $(DD_CI_API_KEY)
-      DD_HOSTNAME: "none"
-      DD_INSIDE_CI: "true"
+      DD_HOSTNAME: none
+      DD_INSIDE_CI: 'true'
 variables:
-  DDEV_COLOR: 1
-  DD_TRACE_AGENT_PORT: 8127
+  - group: extras-variables
+  - name: DDEV_COLOR
+    value: 1
+  - name: DD_TRACE_AGENT_PORT
+    value: 8127
 jobs:
 - template: .azure-pipelines/templates/test-all.yml@integrations-core
   parameters:
-    ddtrace_flag: '--ddtrace'
+    ddtrace_flag: --ddtrace
     repo: extras
     checks:
     - checkName: aqua
@@ -44,8 +47,8 @@ jobs:
     - checkName: bind9
       displayName: BIND 9
       os: linux
-    - checkName: cert_manager
-      displayName: cert-manager
+    - checkName: cfssl
+      displayName: cfssl
       os: linux
     - checkName: cloudsmith
       displayName: Cloudsmith
@@ -56,20 +59,35 @@ jobs:
     - checkName: eventstore
       displayName: Eventstore
       os: linux
+    - checkName: exim
+      displayName: exim
+      os: linux
     - checkName: filebeat
       displayName: Filebeat
+      os: linux
+    - checkName: fluentbit
+      displayName: Fluent Bit
       os: linux
     - checkName: flume
       displayName: flume
       os: linux
+    - checkName: fluxcd
+      displayName: fluxcd
+      os: linux
     - checkName: gatekeeper
       displayName: Gatekeeper
+      os: linux
+    - checkName: gitea
+      displayName: Gitea
       os: linux
     - checkName: gnatsd
       displayName: Gnatsd
       os: linux
     - checkName: gnatsd_streaming
       displayName: Gnatsd Streaming
+      os: linux
+    - checkName: grpc_check
+      displayName: gRPC Check
       os: linux
     - checkName: jfrog_platform
       displayName: JFrog Platform
@@ -91,6 +109,9 @@ jobs:
       os: linux
     - checkName: nextcloud
       displayName: Nextcloud
+      os: linux
+    - checkName: nn_sdwan
+      displayName: Netnology SD-WAN
       os: linux
     - checkName: ns1
       displayName: NS1
@@ -119,14 +140,14 @@ jobs:
     - checkName: portworx
       displayName: Portworx
       os: linux
-    - checkName: pulsar
-      displayName: pulsar
-      os: linux
     - checkName: puma
       displayName: Puma
       os: linux
     - checkName: purefa
-      displayName: purefa
+      displayName: PureFA
+      os: linux
+    - checkName: purefb
+      displayName: PureFB
       os: linux
     - checkName: reboot_required
       displayName: Reboot Required
@@ -173,8 +194,14 @@ jobs:
     - checkName: traefik
       displayName: Traefik
       os: linux
+    - checkName: trino
+      displayName: Trino
+      os: linux
     - checkName: unbound
       displayName: Unbound
+      os: linux
+    - checkName: unifi_console
+      displayName: Unifi Console
       os: linux
     - checkName: upsc
       displayName: UPSC
